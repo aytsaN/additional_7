@@ -43,53 +43,28 @@ for (i=0; i<9; i++) {
 			if (i<3) {
 				cB=0;
 				cL=3;
-				if (j<3) {
-					rB=0;
-					rL=3;
-				}
-				if (j>2 && j<6) {
-					rB=3;
-					rL=6;
-				}
-				if (j>5) {
-					rB=6;
-					rL=9;
-				}
 			}
-
 			if (i>2 && i<6) {
 				cB=3;
 				cL=6;
-				if (j<3) {
-					rB=0;
-					rL=3;
-				}
-				if (j>2 && j<6) {
-					rB=3;
-					rL=6;
-				}
-				if (j>5) {
-					rB=6;
-					rL=9;
-				}		
 			}
-
 			if (i>5) {
 				cB=6;
 				cL=9;
-				if (j<3) {
+			}
+			if (j<3) {
 					rB=0;
 					rL=3;
-				}
-				if (j>2 && j<6) {
+			}
+			if (j>2 && j<6) {
 					rB=3;
 					rL=6;
-				}
-				if (j>5) {
+			}
+			if (j>5) {
 					rB=6;
 					rL=9;
-				}		
-			}
+			}		
+			
 
 			for (x=cB; x<cL ; x++) {
 				for (y=rB; y<rL; y++) {
