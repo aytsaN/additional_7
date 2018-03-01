@@ -20,7 +20,7 @@ for (i=0; i<9; i++) {
 				for (z=0; z<a[i][j].length; z++) 
 				{
 					if(a[i][y].length<2 && a[i][y]==a[i][j][z]) {
-						a[i][j].slice(z-1, 1);
+						a[i][j].splice(z-1, 1);
 					}
 				}
 			}
@@ -32,7 +32,7 @@ for (i=0; i<9; i++) {
 				for (z=0; z<a[i][j].length; z++)
 				{
 					if (a[x][j].length<2 && a[x][j]==a[i][j][z]) {
-						a[i][j].slice(z-1, 1);
+						a[i][j].splice(z-1, 1);
 					}
 				}
 			}
@@ -70,7 +70,7 @@ for (i=0; i<9; i++) {
 				for (y=rB; y<rL; y++) {
 					for (z=0; z<a[i][j].length; z++) {
 						if (a[x][y].length>2 && a[x][y]==a[i][y][z]) {
-							a[i][j].slice(z-1, 1);
+							a[i][j].splice(z-1, 1);
 						}
 					}
 				}
